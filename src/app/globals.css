@@ -1,27 +1,52 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  margin: 0;
+  display: flex;
+  align-items: flex-start;
+  padding:4em;
+  justify-content: center;
+  height: 100vh;
+  background-color: #0d1117; /* Dark background for a futuristic feel */
+  font-family: 'Roboto', sans-serif; /* Choose a modern font */
+}
+
+.Wrapper {
+  background-color: #1f2428; /* Darker background for the form */
+  border-radius: 12px; /* Rounded corners for a modern touch */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Enhanced box shadow for depth */
+  padding: 40px; /* Increased padding for more space */
+  color:#ffffff;
+}
+
+.Container {
+  padding:1em;
+}
+
+/* Additional styles for the form elements inside .Wrapper */
+.Wrapper input, .Wrapper button {
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 2px solid #00bfff; /* Blue border for a nice touch :) */
+  border-radius: 8px;
+  font-size: 18px;
+  color: #ffffff; /* White text color */
+  background-color: transparent; /* Transparent background */
+  outline: none; /* Remove default focus outline */
+}
+
+.Wrapper input::placeholder {
+  color: #aaaaaa; /* Light grey placeholder text */
+}
+
+.Wrapper button {
+  background: linear-gradient(to right, #87ceeb, #00bfff);
+  color: white; /* White text color for the button */
+  cursor: pointer;
+  transition: background 0.3s ease; /* Smooth transition for the background color */
+}
+
+.Wrapper button:hover {
+  background: linear-gradient(to right, #00bfff, #87ceeb);
 }

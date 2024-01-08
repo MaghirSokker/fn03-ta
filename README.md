@@ -1,36 +1,68 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Technical assessment - Wassel
+This is a minimalistic demo made for Technical Assessment purposes.
+
+
+## Table of Contents
+
+1. [Features](#features)
+2. [Folder Structure](#folder-structure)
+3. [Prerequisites](#prerequisites)
+4. [Getting Started](#getting-started)
+5. [Deployment](#deployment)
+
+## Features
+- Allows you to log into your MetaMask wallet
+- Facilitates an easy transaction when logged in
+- Search for a contract's name, symbol and balance if available
+- Responsive design for mobile and desktop devices
+
+## Folder Structure
+
+Below is an overview of the important files and folders in the WalletLabels project:
+
+- `components/`: Contains reusable UI components and layout related components.
+- `hooks/`: Contains custom React hooks used in the project.
+- `tsconfig.json`: TypeScript configuration file.
+- `next.config.mjs`: Next.js configuration file.
+- `package.json`: Contains project dependencies and scripts.
+
+## Prerequisites
+
+To run this demo locally, you need to have the following installed on your system:
+
+- Node.js (v18.17 or later)
+- npm (9.6.7 or later)
 
 ## Getting Started
 
-First, run the development server:
+1. Clone the repository
+
+```bash
+git clone https://github.com/your-username/fn03-ta.git
+```
+
+2. Change the current directory to the project folder
+
+```bash
+cd fn03-ta
+```
+
+3. Install the required dependencies
+
+```bash
+npm i
+```
+
+4. Start the development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+6. Open your browser, and navigate to [http://localhost:3000](http://localhost:3000)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Deployment
 
-## Learn More
+To deploy WalletLabels, you can use any platform that supports Next.js applications, like [Vercel](https://vercel.com) or [Netlify](https://netlify.com). Make sure to set your environment variables in your deployment platform.
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
