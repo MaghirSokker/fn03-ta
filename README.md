@@ -64,5 +64,5 @@ npm run dev
 
 ## Deployment
 
-To deploy WalletLabels, you can use any platform that supports Next.js applications, like [Vercel](https://vercel.com) or [Netlify](https://netlify.com). Make sure to set your environment variables in your deployment platform.
+To deploy this demo, you can use any platform that supports Next.js applications, like [Vercel](https://vercel.com) or [Netlify](https://netlify.com). Make sure to set your environment variables in your deployment platform.
 
