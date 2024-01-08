@@ -5,6 +5,8 @@ import { WalletOptions } from './components/walletOptions';
 import {ReadContract} from './components/readContract';
 import { SendMoney } from './components/sendMoney';
 function ConnectWallet() { 
+  //renders components based on the state of connection to the wallet
+  //One can't send money without being connected
   const { isConnected } = useAccount() 
   if (isConnected) return <>
   <Account/>

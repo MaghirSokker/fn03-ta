@@ -6,20 +6,20 @@ export function ReadContract(){
 
 
   const [searchedAddress,setSearchedAddress]=useState("");
-    //symbol
+    /*
     const result = useReadContract({
         abi:erc20Abi,
     address: `0x${searchedAddress}`,
     functionName:"symbol"
     
-  })/*
+  })
   const result2 = useReadContract({
         abi:erc20Abi,
     address: '0x6B175474E89094C44Da98b954EedeAC495271d0F',
     functionName:"name"
     
   })*/
-    
+    //Usage of wagmi hooks to query respective data
       const symbol = useReadContract({
           abi:erc20Abi,
       address: `0x${searchedAddress}`,
@@ -32,7 +32,7 @@ export function ReadContract(){
     const ensName = useEnsName({
       address: `0x${searchedAddress}`,
     })
-
+    // JSX rendering for the component
     return <>
     <div>Look up contract : {'0x'} 
     <input type="text" value={searchedAddress} onChange={(e)=>setSearchedAddress(e.target.value)}></input></div>

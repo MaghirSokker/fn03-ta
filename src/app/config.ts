@@ -3,7 +3,8 @@ import { mainnet, sepolia } from 'wagmi/chains'
 import { metaMask } from 'wagmi/connectors'
 
 export const config = createConfig({
-    //selects active collection of contracts
+    //selects active collection of contracts(chains)
+    //Can be used to test this app on testnet
     chains: [mainnet, sepolia],
     //selects the connector for metaMask
     connectors: [
